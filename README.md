@@ -1,4 +1,4 @@
-# Project Setup using below tools
+# Project Setup using below tool are: 
 
 1) Maven - Build tool
 2) Git Hub - SCM
