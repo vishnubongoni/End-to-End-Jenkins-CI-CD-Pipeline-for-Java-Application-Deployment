@@ -97,7 +97,7 @@ sudo docker version
 
 - **Stage-4 : Create Docker Container** <br/>
 	
-# Step - 5 : Trigger Jenkins Job #
+# Step - 5 : Trigger Jenkins Job # 
 
 # Step - 6 : Enable host port in security group inbound rules #
 
