@@ -25,6 +25,16 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+        stage('Docker Remove container') {
+            steps {
+                script {
+                    sh '''docker stop javamavenapp_container
+                    docker rm javamavenapp_container
+                    docker rmi demomavenapp viishnu24/demomavenapp:latest'''
+                }
+            }
+        }
+        
         stage('Docker Build and Push to Docker Hub') {
             steps {
                 script {
