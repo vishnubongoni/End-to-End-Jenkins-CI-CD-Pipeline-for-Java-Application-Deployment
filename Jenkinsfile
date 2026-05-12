@@ -28,8 +28,8 @@ pipeline {
         stage('Docker Remove container') {
             steps {
                 script {
-                    sh '''docker stop javamavenapp_container
-                    docker rm javamavenapp_container
+                    sh '''docker stop javamavenapp_container || true
+                    docker rm javamavenapp_container || true
                     docker rmi demomavenapp viishnu24/demomavenapp:latest'''
                 }
             }
