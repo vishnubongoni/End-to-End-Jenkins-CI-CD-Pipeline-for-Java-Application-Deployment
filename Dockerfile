@@ -1,8 +1,7 @@
 # Use Apache Tomcat 9 as base image
 FROM tomcat:9.0
 
-# Maintainer Information
-LABEL maintainer="demo@cloud.com"
+
 
 # Remove default Tomcat applications
 RUN rm -rf /usr/local/tomcat/webapps/*
